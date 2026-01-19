@@ -1,8 +1,8 @@
 class Am < Formula
   desc "Lightweight CLI tool for managing shell aliases"
   homepage "https://github.com/navio/am"
-  url "https://github.com/navio/am/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "4ab5ad31b6e885dae8ea2af1e97e7f225fbb5a029f6875937d7437cd369a7781"
+  url "https://github.com/navio/am/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "71f283938375bb36fb5627d5d8dd700e78ba1c50d93db1fa5f0f0d9c8c526805"
   license "MIT"
 
   depends_on "go" => :build
@@ -27,7 +27,7 @@ class Am < Formula
   test do
     # Test that the binary runs and shows version
     output = shell_output("#{bin}/am --version")
-    assert_match "1.1.0", output
+    assert_match "1.2.0", output
 
     # Test that help works
     help_output = shell_output("#{bin}/am --help")
