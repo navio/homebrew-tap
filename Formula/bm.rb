@@ -1,9 +1,9 @@
 class Bm < Formula
   desc "CLI bookmarks manager"
   homepage "https://github.com/navio/bookmarks"
-  url "https://github.com/navio/bookmarks/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "8fc4a1af0592caf105e77dac7282bf0e6606d04ee7fa9a620147c903a798cbc0"
-  version "0.1.0"
+  url "https://github.com/navio/bookmarks/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "c1519e7004a56da7f82a6539c2c8ac10374c39caaf19504142c4ddd64127ad7b"
+  version "0.2.0"
 
   depends_on "go" => :build
 
