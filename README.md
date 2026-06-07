@@ -7,9 +7,32 @@ Official Homebrew tap for navio's tools.
 ```bash
 brew tap navio/tap
 brew install am
+brew install workflow-manager
 ```
 
 ## Available Formulas
+
+### workflow-manager - Workflow orchestration runner
+
+A CLI runner for Markdown and JSON workflow definitions with local validation, live run progress, attach API controls, and remote registry commands.
+
+**Quick Start:**
+```bash
+# Install
+brew install workflow-manager
+
+# Inspect local adapter setup
+wfm doctor
+
+# Create local agent rules and a starter workflow
+wfm agent ./AGENTS.md
+wfm scaffold ./example-workflow.md
+wfm validate ./example-workflow.md
+```
+
+**Links:**
+- [GitHub Repository](https://github.com/navio/workflow-manager)
+- [Documentation](https://navio.github.io/workflow-manager/)
 
 ### am - Alias Manager
 
@@ -46,7 +69,7 @@ To update formulas from this tap:
 
 ```bash
 brew update
-brew upgrade am
+brew upgrade am workflow-manager
 ```
 
 ## Issues
